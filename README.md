@@ -5,15 +5,25 @@ This is an image classifier that is built in Python using the sci-kit learn pack
 The classification goal is to identify a grayscale image of a fashion item into one of ten specific categories:
 
 0: T-shirt
+
 1: Trouser
+
 2: Pullover
+
 3: Dress
+
 4: Coat
+
 5: Sandal
+
 6: Shirt
+
 7: Sneaker
+
 8: Bag
+
 9: Ankle boot
+
 
 Note that the classification labels for each training example were originally labeled with integeres valued 0-9, and one-hot encoding was used to transform
 these labels to a vector of size 10. Additionally, pixel features were scaled via mean normalization using the StandardScaler module in sklearn in an attempt
@@ -27,8 +37,11 @@ activation offered by sklearn, and the 'adam' solver was used to perform the gra
 batch-size, initial learning rate, and the regularization parameter, the GridSearchCV module of sklearn was used, eventually settling on parameters of:
 
 alpha (regularization) of 0.001
+
 initial learning rate of 0.001
+
 mini-batch size of 128
+
 
 The full details of performance can be found below. Not shown are the accuracy and AUC score, which were 0.86 and 0.936 respectively (performance on hold-out dataset).
 
